@@ -123,26 +123,7 @@ python train.py --use-rnd --rnd-lr 1e-4 --intrinsic-coef 0.5 --rnd-embed-dim 128
 - `--track`: Enable WandB logging
 - `--tensorboard`: Enable TensorBoard logging
 
-## Project Structure
 
-```
-├── train.py              # Main training script
-├── agent.py              # Base PPO agent implementation
-├── sil_agent.py          # PPO+SIL agent implementation
-├── sil_buffer.py         # Prioritized SIL replay buffer
-├── buffer.py             # PPO rollout buffer
-├── network.py            # Actor-critic neural network
-├── logger.py             # WandB and TensorBoard logging
-├── utils.py              # Seed function
-├── plot.py               # Plotting and visualization
-├── results/              # Training results (JSON)
-├── models/               # Saved model checkpoints
-├── videos/               # Episode recordings
-├── runs/                 # TensorBoard logs
-├── rnd.py                # RND neural network
-├── rnd_agent.py          # PPO+RND agent implementation
-└── rnd_buffer/           # PPO+RND rollout buffer
-```
 
 ## Results
 ### Self-Imitation Learning (SIL)
